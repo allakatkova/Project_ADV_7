@@ -4,10 +4,6 @@ class Stack():
 
     def isEmpty(self):
         return self.current_stack == []
-        # if self.current_stack == []:
-        #     return True
-        # else:
-        #     return False
 
     def push(self, add_element):
         self.current_stack.insert(0, add_element)
@@ -86,6 +82,7 @@ if __name__ == '__main__':
     print(f'Последовательность d {stack_check(d)}')
 
     print('-----------------------------------------')
+
     # Несбалансированные последовательности:
     e = '}{}'
     f = '{{[(])]}}'
